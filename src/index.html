@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pong</title>
+    <style>
+        main {
+            width: 100%;
+            height: 30vh;
+            display: flex;
+            justify-content: center;
+        }
+        h1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        #container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pong, The VideoGame</h1>
+
+    <main>
+        <div id="container"></div>
+    </main>
+    <div>Puntos azul: <span id="jugador1">0</span></div>
+    <div>Puntos morado: <span id="jugador2">0</span></div>
+    <div>W - S --> Mover la paleta azul</div>
+    <div>Flecha arriba - abajo --> mover la paleta morada</div>
+    <script src="../node_modules/phaser/dist/phaser.min.js"></script>
+    <script src="js/init.js" type="module"></script>
+</body>
+</html>
